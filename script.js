@@ -121,11 +121,12 @@ function drawCanvas() {
     { x: 95, y: 1225 },  // Track 5
     { x: 95, y: 1287 },  // Track 6
     { x: 623, y: 970 },  // Track 7
-{ x: 623, y: 1031 }, // Track 8
-{ x: 623, y: 1092 }, // Track 9
-{ x: 623, y: 1153 }, // Track 10
-{ x: 623, y: 1215 }, // Track 11
-{ x: 623, y: 1277 }  // Track 12
+{ x: 623, y: 980 },  // Track 7
+{ x: 623, y: 1041 }, // Track 8
+{ x: 623, y: 1102 }, // Track 9
+{ x: 623, y: 1163 }, // Track 10
+{ x: 623, y: 1225 }, // Track 11
+{ x: 623, y: 1287 }  // Track 12
 ];
 
 const maxWidth = 440;
