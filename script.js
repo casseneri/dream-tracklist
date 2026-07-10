@@ -156,19 +156,57 @@ downloadBtn.addEventListener("click", () => {
         .replace(/[^a-z0-9]/gi, "-")
         .toLowerCase();
 
-    canvas.toBlob(function(blob) {
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
+    if (isMobile) {
+
+        // Open image in a new tab
+        const image = canvas.toDataURL("image/png");
+
+        const newTab = window.open();
+
+        newTab.document.write(`
+            <html>
+            <head>
+                <title>Save Image</title>
+                <style>
+                    body{
+                        margin:0;
+                        background:#111;
+                        color:white;
+                        font-family:Arial,sans-serif;
+                        text-align:center;
+                    }
+
+                    p{
+                        padding:20px;
+                    }
+
+                    img{
+                        width:100%;
+                        max-width:1080px;
+                        height:auto;
+                    }
+                </style>
+            </head>
+            <body>
+                <p><strong>Long press the image, then tap "Save to Photos" or "Save Image".</strong></p>
+                <img src="${image}">
+            </body>
+            </html>
+        `);
+
+    } else {
+
+        // Desktop download
         const link = document.createElement("a");
-        link.href = URL.createObjectURL(blob);
+
         link.download = `${filename}.png`;
+        link.href = canvas.toDataURL("image/png");
 
-        document.body.appendChild(link);
         link.click();
-        document.body.removeChild(link);
 
-        URL.revokeObjectURL(link.href);
-
-    }, "image/png");
+    }
 
 });
 const resetBtn = document.getElementById("reset");
