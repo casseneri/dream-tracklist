@@ -42,3 +42,28 @@ canvas{
     margin-bottom:8px;
     box-sizing:border-box;
 }
+button{
+
+    margin-top:25px;
+    padding:15px 35px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:white;
+    color:#222;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    transform:scale(1.04);
+
+}
