@@ -152,7 +152,7 @@ trackInputs.forEach((input, index) => {
 // Download image
 downloadBtn.addEventListener("click", () => {
 
-    const filename = (nameInput.value.trim() || "dream-tracklist")
+    const filename = (nameInput.value.trim() || "my-dream-tracklist")
         .replace(/[^a-z0-9]/gi, "-")
         .toLowerCase();
 
@@ -190,7 +190,7 @@ downloadBtn.addEventListener("click", () => {
                 </style>
             </head>
             <body>
-                <p><strong>Long press the image, then tap "Save to Photos" or "Save Image".</strong></p>
+                <p><strong>Long press the image, then tap "Save in Photos" or "Save Image".</strong></p>
                 <img src="${image}">
             </body>
             </html>
