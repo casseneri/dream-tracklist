@@ -49,7 +49,7 @@ function draw(){
     let name=document.getElementById("name").value.toUpperCase();
 
     if(name!=""){
-        ctx.fillText(name,355,897);
+        fitText(name,355,897,520,40);
     }
 
     // Songs
