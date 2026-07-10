@@ -102,7 +102,7 @@ function drawCanvas() {
     ctx.fillText(
         `${name} DREAM TRACKLIST`,
         540,
-        905
+        910
     );
 
     // ------------------------
