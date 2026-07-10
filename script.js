@@ -113,26 +113,38 @@ function drawCanvas() {
     ctx.textAlign = "left";
     ctx.textBaseline = "middle";
 
-    const startX = 175;
-    const startY = 792;
-    const spacing = 58;
-    const maxWidth = 720;
+  const trackPositions = [
+    { x: 95, y: 995 },   // Track 1
+    { x: 95, y: 1056 },  // Track 2
+    { x: 95, y: 1117 },  // Track 3
+    { x: 95, y: 1178 },  // Track 4
+    { x: 95, y: 1240 },  // Track 5
+    { x: 95, y: 1302 },  // Track 6
+    { x: 623, y: 995 },  // Track 7
+    { x: 623, y: 1056 }, // Track 8
+    { x: 623, y: 1117 }, // Track 9
+    { x: 623, y: 1178 }, // Track 10
+    { x: 623, y: 1240 }, // Track 11
+    { x: 623, y: 1302 }  // Track 12
+];
 
-    trackInputs.forEach((input, index) => {
+const maxWidth = 420;
 
-        const song = input.value.toUpperCase();
+trackInputs.forEach((input, index) => {
 
-        const fontSize = fitText(song, maxWidth, 34);
+    const song = input.value.toUpperCase();
 
-        ctx.font = `${fontSize}px Arial`;
+    const fontSize = fitText(song, maxWidth, 34);
 
-        ctx.fillText(
-            song,
-            startX,
-            startY + (spacing * index)
-        );
+    ctx.font = `${fontSize}px Arial`;
 
-    });
+    ctx.fillText(
+        song,
+        trackPositions[index].x,
+        trackPositions[index].y
+    );
+
+});
 
 }
 
