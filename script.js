@@ -112,7 +112,6 @@ function drawCanvas() {
     ctx.fillStyle = "#FFFFFF";
     ctx.textAlign = "left";
     ctx.textBaseline = "middle";
-    ctx.font = "bold 45px Arial";
 
   const trackPositions = [
     { x: 95, y: 980 },   // Track 1
@@ -129,15 +128,15 @@ function drawCanvas() {
     { x: 623, y: 1287 }  // Track 12
 ];
 
-const maxWidth = 420;
+const maxWidth = 440;
 
 trackInputs.forEach((input, index) => {
 
     const song = input.value.toUpperCase();
 
-    const fontSize = fitText(song, maxWidth, 34);
+    const fontSize = fitText(song, maxWidth, 45);
 
-    ctx.font = `${fontSize}px Arial`;
+    ctx.font = `bold ${size}px Arial`;
 
     ctx.fillText(
         song,
