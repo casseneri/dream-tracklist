@@ -134,7 +134,7 @@ trackInputs.forEach((input, index) => {
 
     const song = input.value.toUpperCase();
 
-    const fontSize = fitText(song, maxWidth, 45);
+    const fontSize = fitText(song, maxWidth, 445);
 
     ctx.font = `bold ${size}px Arial`;
 
