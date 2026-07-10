@@ -97,7 +97,7 @@ function drawCanvas() {
     ctx.fillStyle = "#FFFFFF";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.font = "bold 46px Arial";
+    ctx.font = "italic bold 46px Arial";
 
     ctx.fillText(
         `${name} DREAM TRACKLIST`,
