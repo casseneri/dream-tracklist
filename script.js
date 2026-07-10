@@ -62,7 +62,7 @@ function fitText(text, maxWidth, startingSize) {
 
     while (size > 16) {
 
-        ctx.font = `${fontSize}px Arial`;
+        ctx.font = `bold ${size}px Arial`;
 
         if (ctx.measureText(text).width <= maxWidth) {
             return size;
