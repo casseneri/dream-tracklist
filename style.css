@@ -108,14 +108,30 @@ button:hover {
     opacity: .9;
 }
 
-@media (max-width:900px){
+@media (max-width: 900px) {
 
-    .wrapper{
-        flex-direction:column;
+    .wrapper {
+        flex-direction: column;
+        gap: 16px;
+        padding: 10px;
     }
 
-    .preview{
-        order:-1;
+    .editor,
+    .preview {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: none;
     }
 
+    .preview {
+        order: -1;
+        position: static;
+    }
+
+    canvas {
+        width: 100%;
+        max-width: 540px;
+        height: auto;
+    }
 }
