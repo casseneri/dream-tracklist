@@ -13,8 +13,8 @@ body {
     max-width: 1400px;
     margin: 0px auto;
     display: flex;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    padding: 5px;
     align-items: flex-start;
 }
 
