@@ -14,11 +14,12 @@ body {
 }
 
 .wrapper {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    gap: 20px;
-    padding: 12px;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
     align-items: flex-start;
 }
 
@@ -32,7 +33,7 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
 .preview {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -42,7 +43,7 @@ body {
 
 canvas {
     max-height: calc(100vh - 24px);
-    max-width: 100%;
+    max-width: 650px;
     width: auto;
     height: auto;
     border-radius: 12px;
