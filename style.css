@@ -1,3 +1,7 @@
+button {
+    cursor: url("rawwk-finger-cursor.png") 0 0, pointer !important;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,17 +15,17 @@ body {
 
 .wrapper {
     max-width: 1400px;
-    margin: 20px auto;
+    margin: 0px auto;
     display: flex;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    padding: 5px;
     align-items: flex-start;
 }
 
 .editor {
     flex: 1;
     background: #1E3026;
-    padding: 25px;
+    padding: 8px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
@@ -49,7 +53,7 @@ h1 {
 
 label {
     display: block;
-    margin-top: 18px;
+    margin-top: 13px;
     margin-bottom: 6px;
     font-weight: bold;
 }
@@ -57,9 +61,9 @@ label {
 input{
 
     width:100%;
-    padding:12px 14px;
+    padding:8px 8px;
 
-    margin-bottom:12px;
+    margin-bottom:8px;
 
     border:1px solid #ccc;
 
@@ -87,8 +91,8 @@ input:focus{
 
 button {
     width: 100%;
-    margin-top: 20px;
-    padding: 14px;
+    margin-top: 10px;
+    padding: 12px;
     font-size: 16px;
     cursor: pointer;
     border: none;
