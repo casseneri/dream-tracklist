@@ -90,12 +90,15 @@ input:focus{
 }
 
 button {
+     font-weight: bold;
     width: 100%;
     margin-top: 10px;
     padding: 12px;
     font-size: 16px;
     cursor: pointer;
     border: none;
+    border-radius: 15px;
+    background: #345440;
     border-radius: 8px;
     background: black;
     color: white;
