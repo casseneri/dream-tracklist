@@ -1,13 +1,7 @@
-body,
-button,
-a,
-label,
-canvas {
-    cursor: url("rawwk-finger-cursor.png"), pointer;
+button {
+    cursor: url("rawwk-finger-cursor.png") 0 0, pointer !important;
 }
-input {
-    cursor: text;
-}
+
 * {
     box-sizing: border-box;
 }
