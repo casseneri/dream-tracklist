@@ -14,11 +14,11 @@ body {
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     display: flex;
-    gap: 16px;
-    padding: 8px;
+    gap: 20px;
+    padding: 12px;
     align-items: flex-start;
 }
 
